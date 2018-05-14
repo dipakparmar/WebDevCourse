@@ -1,6 +1,6 @@
 {
   "docs": {
-    "Getting Started": ["Getting-Started-with-web"],
+    "Getting Started": ["Getting-Started-with-web", "HTML-Basics"],
     "HTML - Structuring the Web": ["HTML-Structuring-the-Web"],
 	"CSS — Styling the Web": ["CSS-Styling-the-Web"],
 	"JavaScript — Dynamic client-side scripting": ["JavaScript-dynamic-client-side-scripting"],
@@ -9,4 +9,5 @@
   "docs-other": {
     "First Category": ["doc4", "doc5"]
   }
+  
 }

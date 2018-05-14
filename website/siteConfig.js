@@ -38,10 +38,10 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'Getting-Started-with-web', label: 'Learn'},
+    {doc: 'Getting-Started-with-web', label: 'Start Learning'},
     {doc: 'Installing-Basic-Software', label: 'Tools'},
-    {page: 'help', label: 'Help'},
-    {blog: true, label: 'Blog'},
+    {page: 'help', label: 'Help/FAQ'},
+    {blog: true, label: 'Updates'},
   ],
 
   // If you have users set above, you add it here:
@@ -88,12 +88,12 @@ const siteConfig = {
   onPageNav: 'separate',
 
   /* Open Graph and Twitter card images */
-  ogImage: 'img/docusaurus.png',
-  twitterImage: 'img/docusaurus.png',
+  ogImage: 'img/logo.png',
+  twitterImage: 'img/logo.png',
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+  repoUrl: 'https://github.com/DipakParmar/WebDevCourse',
 };
 
 module.exports = siteConfig;
