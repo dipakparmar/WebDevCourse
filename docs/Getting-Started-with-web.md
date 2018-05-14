@@ -4,58 +4,40 @@ title: Getting started with the Web overview
 sidebar_label: Getting started with the Web overview
 ---
 
-> HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.  As the title suggests, this article will give you a basic understanding of HTML and its functions.
+## The story of your first website
 
-## So what is HTML, really?
+It's a lot of work to create a professional website, so if you're new to web development, we encourage you to start small. You won't build another Facebook right away, but it's not hard to get your own simple website online, so we'll start there.
 
-HTML is not a programming language; it is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, and can make font bigger or smaller, and so on.  For example, take the following line of content:
+By working through the articles listed below in order, you will go from nothing to getting your first webpage online. Let's go!
 
-> My cat is very grumpy
+## Installing basic software
 
-If we wanted the line to stand by itself, we could specify that it is a paragraph by enclosing it in paragraph tags:
+When it comes to tools for building a website, there's a lot to pick from. If you're just starting out, you might be confused by the array of code editors, frameworks, and testing tools out there. In [Installing Basic Software](../docs/Installing-Basic-Software.html), we show you step-by-step how to install just the software you need to begin some basic web development.
 
-> ```<p>My cat is very grumpy</p> ```
+What will your website look like?
 
-## Anatomy of an HTML element
+Before you start writing the code for your website, you should plan it first. What information are you showcasing? What fonts and colors are you using? What will your website look like? We outline a simple method you can follow to plan out your site's content and design.
 
-Let's explore this paragraph element a bit further.
+## Dealing with files
 
-![grumpy-cat-small](../img/assets/grumpy-cat-small.png)
+A website consists of many files: text content, code, stylesheets, media content, and so on. When you're building a website, you need to assemble these files into a sensible structure and make sure they can talk to one another. Dealing with files explains how to set up a sensible file structure for your website and what issues you should be aware of.
 
-The main parts of our element are:
+## [HTML basics](../docs/HTML-Basics.html)
 
-1. **The opening tag**: This consists of the name of the element (in this case, p), wrapped in opening and closing **angle brackets**. This states where the element begins, or starts to take effect — in this case where the paragraph begins.
-2. **The closing tag**: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the end of the paragraph is. Failing to include a closing tag is one of the common beginner errors and can lead to strange results.
-3. **The content**: This is the content of the element, which in this case is just text.
-4. **The element**: The opening tag, the closing tag, and the content together comprise the element.
+Hypertext Markup Language (HTML) is the code that you use to structure your web content and give it meaning and purpose. For example, is my content a set of paragraphs or a list of bullet points? Do I have images inserted on my page? Do I have a data table? Without overwhelming you, HTML basics provides enough information to make you familiar with HTML.
 
-Elements can also have attributes, which look like this:
+## CSS basics
 
-![grumpy-cat-small](../img/assets/grumpy-cat-attribute-small.png)
+Cascading Stylesheets (CSS) is the code that you use to style your website. For example, do you want the text to be black or red? Where should content be drawn on the screen? What background images and colors should be used to decorate your website? CSS basics takes you through what you need to get started.
 
-Attributes contain extra information about the element that you don't want to appear in the actual content. Here, class is the attribute name, and editor-note is the attribute value. The class attribute allows you to give the element an identifier that can be later used to target the element with style information and other things.
+## JavaScript basics
 
-An attribute should always have:
+JavaScript is the programming language that you use to add interactive features to your website. Some examples could be games, things that happen when buttons are pressed or data is entered in forms, dynamic styling effects, animation, and much more. JavaScript basics gives you an idea of what is possible with this exciting language, and how to get started.
 
-1. A space between it and the element name (or the previous attribute, if the element already has one or more attributes).
-2. The attribute name, followed by an equals sign.
-3. Opening and closing quote marks wrapped around the attribute value.        
+## Publishing your website
 
-## Nesting elements
+Once you have finished writing the code and organizing the files that make up your website, you need to put it all online so people can find it. Publishing your sample code describes how to get your simple sample code online with minimum effort.
 
-You can put elements inside other elements too — this is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word "very" in a ```<strong>``` element, which means that the word is to be strongly emphasized:
+## How the web works
 
-```<p>My cat is <strong>very</strong> grumpy.</p>```
-You do however need to make sure that your elements are properly nested: in the example above we opened the <p> element first, then the <strong> element, therefore we have to close the <strong> element first, then the <p>. The following is incorrect:
-
-```<p>My cat is <strong>very grumpy.</p></strong>```
-The elements have to open and close correctly so that they are clearly inside or outside one another. If they overlap like above, then your web browser will try to make a best guess at what you were trying to say, which can lead to unexpected results. So don't do it!
-
-Empty elements
-Some elements have no content, and are called empty elements. Take the <img> element we already have in our HTML:
-
-```<img src="images/firefox-icon.png" alt="My test image">```
-
-This contains two attributes, but there is no closing ```</img>``` tag, and no inner content. This is because an image element doesn't wrap content to have an effect on it. Its purpose is to embed an image in the HTML page in the place it appears.
-
-##  Anatomy of an HTML document
+When you access your favorite website, a lot of complicated things happen in the background that you may not know about. How the web works outlines what happens when you view a webpage on your computer.
