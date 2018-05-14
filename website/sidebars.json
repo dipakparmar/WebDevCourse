@@ -1,0 +1,12 @@
+{
+  "docs": {
+    "Getting Started": ["Getting-Started-with-web"],
+    "HTML - Structuring the Web": ["HTML-Structuring-the-Web"],
+	"CSS — Styling the Web": ["CSS-Styling-the-Web"],
+	"JavaScript — Dynamic client-side scripting": ["JavaScript-dynamic-client-side-scripting"],
+    "Wordpress": ["doc3"]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
