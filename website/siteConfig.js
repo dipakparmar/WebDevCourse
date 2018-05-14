@@ -24,7 +24,7 @@ const siteConfig = {
   title: 'WebSite Development Course' /* title for your website */,
   tagline: 'Build a Website using Wordpress',
   url: 'https://dipakparmar.github.io/',
-  baseUrl: '/webdevcourse/' /* base url for your project */,
+  baseUrl: '/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
