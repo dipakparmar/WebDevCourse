@@ -5,10 +5,9 @@ authorURL: http://twitter.com/DipakParmar65
 authorFBID: 100009912644503
 ---
 
-Course website is Updating....
-<!--truncate-->
 
 Outline for Course : 
+
 - What is HTML, CSS & JavaScript?
 
 - Basics of HTML Structure, tags, code blocks?
@@ -17,7 +16,7 @@ Outline for Course :
 image formatting, Scrolling text
 
 - CSS Basics structure, Colors and Inline Styles
-
+<!--truncate-->
 - Internal , External Style Sheets, color codes and Basic Formatting, Page
 Layout, Styling Page Divisions, class defining
 

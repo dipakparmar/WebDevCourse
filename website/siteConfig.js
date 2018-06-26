@@ -74,7 +74,7 @@ const siteConfig = {
   copyright:
     'Copyright © ' +
     new Date().getFullYear() +
-    ' ....TBA...',
+    ' Thopmson Rivers University | Faculty of Computer Science',
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks

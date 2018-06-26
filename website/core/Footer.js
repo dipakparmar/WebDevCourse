@@ -34,14 +34,14 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Docs</h5>
-            <a href={this.docUrl('doc1.html', this.props.language)}>
-              Getting Started (or other categories)
+            <a href={this.docUrl('getting-started-with-web.html', this.props.language)}>
+              Geting Started 
             </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
-              Guides (or other categories)
+            <a href={this.docUrl('installing-basic-software.', this.props.language)}>
+              Tools/Software/Stacks for Web Devlopment
             </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
-              API Reference (or other categories)
+            <a href={this.pageUrl('help.html', this.props.language)}>
+              FAQ/Queries
             </a>
           </div>
           <div>
@@ -50,12 +50,12 @@ class Footer extends React.Component {
               User Showcase
             </a>
             <a
-              href="http://stackoverflow.com/questions/tagged/"
+              href="http://stackoverflow.com/questions/tagged/wordpress"
               target="_blank"
               rel="noreferrer noopener">
               Stack Overflow
             </a>
-            <a href="https://discordapp.com/">Project Chat</a>
+            <a href="https://m.me/IamDipakParmar/">Chat with me</a>
             <a
               href="https://twitter.com/"
               target="_blank"
@@ -66,7 +66,7 @@ class Footer extends React.Component {
           <div>
             <h5>More</h5>
             <a href={this.props.config.baseUrl + 'blog'}>Blog</a>
-            <a href="https://github.com/">GitHub</a>
+            <a href="https://github.com/dipakparmar/webdevcourse">GitHub</a>
             <a
               className="github-button"
               href={this.props.config.repoUrl}
@@ -86,8 +86,8 @@ class Footer extends React.Component {
           rel="noreferrer noopener"
           className="fbOpenSource">
           <img
-            src={this.props.config.baseUrl + 'img/.png'}
-            alt="TBD"
+            src={this.props.config.baseUrl + 'img/tru_logo.png'}
+            alt="Thompson Rivers University"
             width="170"
             height="45"
           />
