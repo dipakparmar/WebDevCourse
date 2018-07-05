@@ -3,8 +3,8 @@
     "Getting Started": ["Getting-Started-with-web", "Installing-Basic-Software", "What-will-your-website-look-like", "Dealing-with-files", "HTML-Basics", "CSS-basics", "JavaScript-basics", "Publishing-your-website", "How-the-Web-works"],
     "HTML - Structuring the Web": ["HTML-Structuring-the-Web"],
 	"CSS — Styling the Web": ["CSS-Styling-the-Web"],
-  "JavaScript — Dynamic client-side scripting": ["JavaScript-dynamic-client-side-scripting"],
-  "WordPress": ["wordpress"]
+	"JavaScript — Dynamic client-side scripting": ["JavaScript-dynamic-client-side-scripting"],
+    "Wordpress": ["doc3"]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]
