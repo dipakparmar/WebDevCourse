@@ -32,6 +32,7 @@ const users = [
 
 const siteConfig = {
   title: 'WebSite Development Course' /* title for your website */,
+  titleMed: ' Website Dev. Course',
   tagline: 'Build a Website using Wordpress',
   url: 'https://dipakparmar.github.io/',
   baseUrl: '/' /* base url for your project */,

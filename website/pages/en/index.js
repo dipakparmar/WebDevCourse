@@ -58,7 +58,7 @@ const Logo = props => (
 
 const ProjectTitle = props => (
   <h2 className="projectTitle">
-    {siteConfig.title}
+   {siteConfig.titleMed}
     <small>{siteConfig.tagline}</small>
   </h2>
 );
@@ -76,7 +76,7 @@ class HomeSplash extends React.Component {
     let language = this.props.language || '';
     return (
       <SplashContainer>
-        <Logo img_src={imgUrl('docusaurus.svg')} />
+        <Logo img_src={imgUrl('WpWoo.png')} />
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
@@ -102,16 +102,34 @@ const Features = props => (
   <Block layout="fourColumn">
     {[
       {
-        content: 'This is the content of my feature',
-        image: imgUrl('docusaurus.svg'),
+        content: 'Easy to manage your website and responsive design.',
+        image: imgUrl('simplycity.png'),
         imageAlign: 'top',
-        title: 'Feature One',
+        title: 'SIMPLYCITY AND RESPONSIVE',
       },
       {
         content: 'The content of my second feature',
-        image: imgUrl('docusaurus.svg'),
+        image: imgUrl('theme.jpg'),
         imageAlign: 'top',
-        title: 'Feature Two',
+        title: 'THEMES',
+      },
+      {
+        content: 'The content of my second feature',
+        image: imgUrl('plugins.png'),
+        imageAlign: 'top',
+        title: 'PLUGINS',
+      },
+      {
+        content: 'The content of my second feature',
+        image: imgUrl('multipurpose.png'),
+        imageAlign: 'top',
+        title: ' MULTIPURPOSE',
+      },
+      {
+        content: 'The content of my second feature',
+        image: imgUrl('easyswitch.jpg'),
+        imageAlign: 'top',
+        title: 'EASYSWITCH',
       },
     ]}
   </Block>
@@ -121,8 +139,16 @@ const FeatureCallout = props => (
   <div
     className="productShowcaseSection paddingBottom"
     style={{textAlign: 'center'}}>
-    <h2>Feature Callout</h2>
-    <MarkdownBlock>These are features of this project</MarkdownBlock>
+    <h2>Workshop Highlights</h2>
+    <MarkdownBlock>
+       
+      > * Making E-Commerce Website
+       
+      * Making Portfolio Site
+      
+      * Making Blogging Site
+
+    </MarkdownBlock>
   </div>
 );
 
@@ -131,9 +157,9 @@ const LearnHow = props => (
     {[
       {
         content: 'Talk about learning how to use this',
-        image: imgUrl('docusaurus.svg'),
+        image: imgUrl('Shop.jpg'),
         imageAlign: 'right',
-        title: 'Learn How',
+        title: 'Learn How to make Online Shop Website',
       },
     ]}
   </Block>
@@ -144,7 +170,7 @@ const TryOut = props => (
     {[
       {
         content: 'Talk about trying this out',
-        image: imgUrl('docusaurus.svg'),
+        image: imgUrl('portfolioBanner.jpg'),
         imageAlign: 'left',
         title: 'Try it Out',
       },
@@ -157,7 +183,7 @@ const Description = props => (
     {[
       {
         content: 'This is another description of how this project is useful',
-        image: imgUrl('docusaurus.svg'),
+        image: imgUrl('WPWooBanner.png'),
         imageAlign: 'right',
         title: 'Description',
       },
@@ -203,11 +229,11 @@ class Index extends React.Component {
       <div>
         <HomeSplash language={language} />
         <div className="mainContainer">
-          //<Features />
-          //<FeatureCallout />
-          //<LearnHow />
-          //<TryOut />
-          //<Description />
+          <Features />
+          <FeatureCallout />
+          <LearnHow />
+          <TryOut />
+          <Description />
           <Showcase language={language} />
         </div>
       </div>
