@@ -4,85 +4,54 @@ title: How the Web works?
 sidebar_label: How the Web works?
 ---
 
-> HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.  As the title suggests, this article will give you a basic understanding of HTML and its functions.
+How the web works provides a simplified view of what happens when you view a webpage in a web browser on your computer or phone.
 
-## So what is HTML, really?
+This theory is not essential to writing web code in the short term, but before long you'll really start to benefit from understanding what's happening in the background.
 
-HTML is not a programming language; it is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, and can make font bigger or smaller, and so on.  For example, take the following line of content:
+Clients and servers
+Computers connected to the web are called clients and servers. A simplified diagram of how they interact might look like this:
 
-> My cat is very grumpy
 
-If we wanted the line to stand by itself, we could specify that it is a paragraph by enclosing it in paragraph tags:
 
-> ```<p>My cat is very grumpy</p> ```
+Clients are the typical web user's internet-connected devices (for example, your computer connected to your Wi-Fi, or your phone connected to your mobile network) and web-accessing software available on those devices (usually a web browser like Firefox or Chrome).
+Servers are computers that store webpages, sites, or apps. When a client device wants to access a webpage, a copy of the webpage is downloaded from the server onto the client machine to be displayed in the user's web browser.
+The other parts of the toolbox
+The client and server we've described above don't tell the whole story. There are many other parts involved, and we'll describe them below.
 
-## Anatomy of an HTML element
+For now, let's imagine that the web is a road. On one end of the road is the client, which is like your house. On the other end of the road is the server, which is a shop you want to buy something from.
 
-Let's explore this paragraph element a bit further.
 
-![grumpy-cat-small](../img/assets/grumpy-cat-small.png)
 
-The main parts of our element are:
+In addition to the client and the server, we also need to say hello to:
 
-1. **The opening tag**: This consists of the name of the element (in this case, p), wrapped in opening and closing **angle brackets**. This states where the element begins, or starts to take effect — in this case where the paragraph begins.
-2. **The closing tag**: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the end of the paragraph is. Failing to include a closing tag is one of the common beginner errors and can lead to strange results.
-3. **The content**: This is the content of the element, which in this case is just text.
-4. **The element**: The opening tag, the closing tag, and the content together comprise the element.
+Your internet connection: Allows you to send and receive data on the web. It's basically like the street between your house and the shop.
+TCP/IP: Transmission Control Protocol and Internet Protocol are communication protocols that define how data should travel across the web. This is like the transport mechanisms that let you place an order, go to the shop, and buy your goods. In our example, this is like a car or a bike (or however else you might get around).
+DNS: Domain Name Servers are like an address book for websites. When you type a web address in your browser, the browser looks at the DNS to find the web site's real address before it can retrieve the website. The browser needs to find out which server the website lives on, so it can send HTTP messages to the right place (see below). This is like looking up the address of the shop so you can access it.
+HTTP: Hypertext Transfer Protocol is an application protocol that defines a language for clients and servers to speak to each other. This is like the language you use to order your goods.
+Component files: A website is made up of many different files, which are like the different parts of the goods you buy from the shop. These files come in two main types:
+Code files: Websites are built primarily from HTML, CSS, and JavaScript, though you'll meet other technologies a bit later.
+Assets: This is a collective name for all the other stuff that makes up a website, such as images, music, video, Word documents, and PDFs.
+So what happens, exactly?
+When you type a web address into your browser (for our analogy that's like walking to the shop):
 
-Elements can also have attributes, which look like this:
+The browser goes to the DNS server, and finds the real address of the server that the website lives on (you find the address of the shop).
+The browser sends an HTTP request message to the server, asking it to send a copy of the website to the client (you go to the shop and order your goods). This message, and all other data sent between the client and the server, is sent across your internet connection using TCP/IP.
+Provided the server approves the client's request, the server sends the client a "200 OK" message, which means "Of course you can look at that website! Here it is", and then starts sending the website's files to the browser as a series of small chunks called data packets (the shop gives you your goods, and you bring them back to your house).
+The browser assembles the small chunks into a complete website and displays it to you (the goods arrive at your door — new shiny stuff, awesome!).
+DNS explained
+Real web addresses aren't the nice, memorable strings you type into your address bar to find your favorite websites. They are special numbers that look like this: 63.245.215.20.
 
-![grumpy-cat-small](../img/assets/grumpy-cat-attribute-small.png)
+This is called an IP address, and it represents a unique location on the Web. However, it's not very easy to remember, is it? That's why Domain Name Servers were invented. These are special servers that match up a web address you type into your browser (like "mozilla.org") to the website's real (IP) address.
 
-Attributes contain extra information about the element that you don't want to appear in the actual content. Here, class is the attribute name, and editor-note is the attribute value. The class attribute allows you to give the element an identifier that can be later used to target the element with style information and other things.
+Websites can be reached directly via their IP addresses. Try going to the Mozilla website by typing 63.245.215.20 into the address bar on a new browser tab.
 
-An attribute should always have:
+A domain name is just another form of an IP address
 
-1. A space between it and the element name (or the previous attribute, if the element already has one or more attributes).
-2. The attribute name, followed by an equals sign.
-3. Opening and closing quote marks wrapped around the attribute value.        
+Packets explained
+Earlier we used the term "packets" to describe the format in which the data is sent from server to client. What do we mean here? Basically, when data is sent across the web, it is sent as thousands of small chunks, so that many different web users can download the same website at the same time. If web sites were sent as single big chunks, only one user could download one at a time, which obviously would make the web very inefficient and not much fun to use.
 
-## Nesting elements
-
-You can put elements inside other elements too — this is called **nesting**. If we wanted to state that our cat is **very** grumpy, we could wrap the word "very" in a ```<strong>``` element, which means that the word is to be strongly emphasized:
-
-> ```<p>My cat is <strong>very</strong> grumpy.</p>```
-
-You do however need to make sure that your elements are properly nested: in the example above we opened the ```<p>``` element first, then the ```<strong>``` element, therefore we have to close the ```<strong>``` element first, then the ```<p>```. The following is incorrect:
-
-> ```<p>My cat is <strong>very grumpy.</p></strong>```
-
-The elements have to open and close correctly so that they are clearly inside or outside one another. If they overlap like above, then your web browser will try to make a best guess at what you were trying to say, which can lead to unexpected results. So don't do it!
-
-## Empty elements
-
-Some elements have no content, and are called empty elements. Take the <img> element we already have in our HTML:
-
-> ```<img src="images/firefox-icon.png" alt="My test image">```
-
-This contains two attributes, but there is no closing ```</img>``` tag, and no inner content. This is because an image element doesn't wrap content to have an effect on it. Its purpose is to embed an image in the HTML page in the place it appears.
-
-##  Anatomy of an HTML document
-
-That wraps up the basics of individual HTML elements, but they aren't very useful on their own. Now we'll look at how individual elements are combined to form an entire HTML page. 
-
-```
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-  </head>
-  <body>
-    <img src="images/firefox-icon.png" alt="My test image">
-  </body>
-</html>
-```
-
-Here we have:
-
-- ```<!DOCTYPE html>``` — the doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However, these days no one really cares about them, and they are really just a historical artefact that needs to be included for everything to work right. For now, that's all you need to know.
-- ```<html></html>``` — the <html> element. This element wraps all the content on the entire page, and is sometimes known as the root element.
-- ```<head></head>``` — the <head> element. This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more.
-- ```<body></body>``` — the <body> element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.
-- ```<meta charset="utf-8">``` — this element sets the character set your document should use to UTF-8, which includes most characters from the vast majority of human written languages. Essentially it can now handle any textual content you might put on it. There is no reason not to set this, and it can help avoid some problems later on.
-- ```<title></title>``` — the ```<title>``` element. This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favourite it.
+See also
+How the Internet works
+HTTP — an Application-Level Protocol
+HTTP: Let’s GET It On!
+HTTP: Response Codes

@@ -4,85 +4,58 @@ title: Publishing your website
 sidebar_label: Publishing your website
 ---
 
-> HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.  As the title suggests, this article will give you a basic understanding of HTML and its functions.
+Once you finish writing the code and organizing the files that make up your website, you need to put it all online so people can find it. This article lays out how to get your simple sample code online with little effort.
 
-## So what is HTML, really?
+What are the options?
+Publishing a website isn't a simple topic, mainly because there are so many different ways to do it. In this article we don't aim to document all possible methods. Rather, we'll discuss the pros and cons of three broad strategies from a beginner's point of view, and then walk you through one method that will work for now.
 
-HTML is not a programming language; it is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, and can make font bigger or smaller, and so on.  For example, take the following line of content:
+Getting hosting and a domain name
+If you want total control over your published website, then you'll probably need to spend money to buy:
 
-> My cat is very grumpy
+Hosting — rented file space on a hosting company's web server. You put your website files on this space, and the web server serves the content to web users who request it.
+A domain name — the unique address where people can find your website, like http://www.mozilla.org, or http://www.bbc.co.uk. You rent your domain name for so many years from a domain registrar.
+Many professional websites go online this way.
 
-If we wanted the line to stand by itself, we could specify that it is a paragraph by enclosing it in paragraph tags:
+In addition, you will need a File Transfer Protocol (FTP) program (see How much does it cost: software for more details) to actually transfer the website files over to the server. FTP  programs vary widely, but generally you have to log on to your web server using details provided by your hosting company (e.g. username, password, host name). Then the program shows you your local files and the web server's files in two windows, so you can transfer them back and forth:
 
-> ```<p>My cat is very grumpy</p> ```
 
-## Anatomy of an HTML element
 
-Let's explore this paragraph element a bit further.
+Tips for finding hosting and domains
+We don't promote specific commercial hosting companies or domain name registrars here. To find hosting companies and registrars, just search for "web hosting" and "domain names". All registrars will have a feature to allow you to check if the domain name you want is available, or if someone else has already registered it.
+Your home or office internet service provider may provide some limited hosting for a small website. The available feature set will be limited, but it might be perfect for your first experiments — contact them and ask!
+There are a few free services available like Neocities, Blogger, and WordPress. Again, you get what you pay for, but they are ideal for your initial experiments. Free services mostly don't require FTP software for uploads either — you can just drag and drop right inside their web interface.
+Sometimes companies provide both hosting and domains in one package.
+Using an online tool like GitHub or Google App Engine
+Some tools let you publish your website online:
 
-![grumpy-cat-small](../img/assets/grumpy-cat-small.png)
+GitHub is a "social coding" site. It allows you to upload code repositories for storage in the Git version control system. You can then collaborate on code projects, and the system is open-source by default, meaning that anyone in the world can find your GitHub code, use it, learn from it, and improve on it. GitHub has a very useful feature called GitHub Pages, which allows you to expose website code live on the web.
+Google App Engine is a powerful platform that lets you build and run applications on Google’s infrastructure — whether you need to build a multi-tiered web application from scratch or host a static website. See How do you host your website on Google App Engine? for more information.
+Unlike most hosting, such tools are usually free to use, but you only get a limited feature-set.
 
-The main parts of our element are:
+Using a web-based IDE such as Thimble
+There are a number of web apps that emulate a website development environment, allowing you to enter HTML, CSS and JavaScript and then display the result of that code when rendered as a website — all in one browser tab. Generally speaking these tools are quite easy, great for learning, and free (for basic features), and they host your rendered page at a unique web address. However, the basic features are pretty limited, and the apps usually don't provide hosting space for assets (like images).
 
-1. **The opening tag**: This consists of the name of the element (in this case, p), wrapped in opening and closing **angle brackets**. This states where the element begins, or starts to take effect — in this case where the paragraph begins.
-2. **The closing tag**: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the end of the paragraph is. Failing to include a closing tag is one of the common beginner errors and can lead to strange results.
-3. **The content**: This is the content of the element, which in this case is just text.
-4. **The element**: The opening tag, the closing tag, and the content together comprise the element.
+Try playing with some of these examples, and see which one you like the best:
 
-Elements can also have attributes, which look like this:
+JSFiddle
+Thimble
+JS Bin
+CodePen
 
-![grumpy-cat-small](../img/assets/grumpy-cat-attribute-small.png)
 
-Attributes contain extra information about the element that you don't want to appear in the actual content. Here, class is the attribute name, and editor-note is the attribute value. The class attribute allows you to give the element an identifier that can be later used to target the element with style information and other things.
+Publishing via GitHub
+Now let's take you through how to easily publish your site via GitHub Pages.
 
-An attribute should always have:
+First of all, sign up for GitHub and verify your email address.
+Next, you need to create a repository for your files to go in.
+On this page, in the Repository name box, enter username.github.io, where username is your username. So for example, our friend bobsmith would enter bobsmith.github.io.
+Also check Initialize this repository with a README and then click Create repository.
+After that, drag and drop the content of your website folder into your repository and then click Commit changes.
+ 
+Note: Make sure your folder has an index.html file.
 
-1. A space between it and the element name (or the previous attribute, if the element already has one or more attributes).
-2. The attribute name, followed by an equals sign.
-3. Opening and closing quote marks wrapped around the attribute value.        
+Now navigate your browser to username.github.io to see your website online. For example, for the username chrisdavidmills, go to chrisdavidmills.github.io.
 
-## Nesting elements
+Note: It may take a few minutes for your website to go live. If it doesn't work immediately, you may have to wait a few minutes and then try again.
 
-You can put elements inside other elements too — this is called **nesting**. If we wanted to state that our cat is **very** grumpy, we could wrap the word "very" in a ```<strong>``` element, which means that the word is to be strongly emphasized:
-
-> ```<p>My cat is <strong>very</strong> grumpy.</p>```
-
-You do however need to make sure that your elements are properly nested: in the example above we opened the ```<p>``` element first, then the ```<strong>``` element, therefore we have to close the ```<strong>``` element first, then the ```<p>```. The following is incorrect:
-
-> ```<p>My cat is <strong>very grumpy.</p></strong>```
-
-The elements have to open and close correctly so that they are clearly inside or outside one another. If they overlap like above, then your web browser will try to make a best guess at what you were trying to say, which can lead to unexpected results. So don't do it!
-
-## Empty elements
-
-Some elements have no content, and are called empty elements. Take the <img> element we already have in our HTML:
-
-> ```<img src="images/firefox-icon.png" alt="My test image">```
-
-This contains two attributes, but there is no closing ```</img>``` tag, and no inner content. This is because an image element doesn't wrap content to have an effect on it. Its purpose is to embed an image in the HTML page in the place it appears.
-
-##  Anatomy of an HTML document
-
-That wraps up the basics of individual HTML elements, but they aren't very useful on their own. Now we'll look at how individual elements are combined to form an entire HTML page. 
-
-```
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>My test page</title>
-  </head>
-  <body>
-    <img src="images/firefox-icon.png" alt="My test image">
-  </body>
-</html>
-```
-
-Here we have:
-
-- ```<!DOCTYPE html>``` — the doctype. In the mists of time, when HTML was young (about 1991/2), doctypes were meant to act as links to a set of rules that the HTML page had to follow to be considered good HTML, which could mean automatic error checking and other useful things. However, these days no one really cares about them, and they are really just a historical artefact that needs to be included for everything to work right. For now, that's all you need to know.
-- ```<html></html>``` — the <html> element. This element wraps all the content on the entire page, and is sometimes known as the root element.
-- ```<head></head>``` — the <head> element. This element acts as a container for all the stuff you want to include on the HTML page that isn't the content you are showing to your page's viewers. This includes things like keywords and a page description that you want to appear in search results, CSS to style our content, character set declarations, and more.
-- ```<body></body>``` — the <body> element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.
-- ```<meta charset="utf-8">``` — this element sets the character set your document should use to UTF-8, which includes most characters from the vast majority of human written languages. Essentially it can now handle any textual content you might put on it. There is no reason not to set this, and it can help avoid some problems later on.
-- ```<title></title>``` — the ```<title>``` element. This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favourite it.
+To learn more, see GitHub Pages Help.

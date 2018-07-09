@@ -6,7 +6,7 @@ sidebar_label: HTML Basics
 
 > HTML (Hypertext Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables.  As the title suggests, this article will give you a basic understanding of HTML and its functions.
 
-## So what is HTML, really?
+# So what is HTML, really?
 
 HTML is not a programming language; it is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, and can make font bigger or smaller, and so on.  For example, take the following line of content:
 
@@ -86,3 +86,78 @@ Here we have:
 - ```<body></body>``` — the <body> element. This contains all the content that you want to show to web users when they visit your page, whether that's text, images, videos, games, playable audio tracks, or whatever else.
 - ```<meta charset="utf-8">``` — this element sets the character set your document should use to UTF-8, which includes most characters from the vast majority of human written languages. Essentially it can now handle any textual content you might put on it. There is no reason not to set this, and it can help avoid some problems later on.
 - ```<title></title>``` — the ```<title>``` element. This sets the title of your page, which is the title that appears in the browser tab the page is loaded in. It is also used to describe the page when you bookmark/favourite it.
+
+Images
+Let's turn our attention to the <img> element again:
+
+<img src="images/firefox-icon.png" alt="My test image">
+As we said before, it embeds an image into our page in the position it appears. It does this via the src (source) attribute, which contains the path to our image file.
+
+We have also included an alt (alternative) attribute. In this attribute, you specify descriptive text for users who cannot see the image, possibly because:
+
+They are visually impaired. Users with significant visual impairments often use tools called screen readers to read out the alt text to them.
+Something has gone wrong causing the image to not display. For example, try deliberately changing the path inside your src attribute to make it incorrect. If you save and reload the page, you should see something like this in place of the image:
+
+
+The key words about alt text are "descriptive text". The alt text you write should provide the reader with enough information to have a good idea of what the image conveys. In this example, our current text of "My test image" is no good at all. A much better alternative for our Firefox logo would be "The Firefox logo: a flaming fox surrounding the Earth."
+
+Try coming up with some better alt text for your image now.
+
+Note: Find out more about accessibility at MDN's Accessibility landing page.
+
+Marking up text
+This section will cover some of the basic HTML elements you'll use for marking up text.
+
+Headings
+Heading elements allow you to specify that certain parts of your content are headings — or subheadings — of your content. In the same way that a book has a main title, chapter titles and subtitles, an HTML document can too. HTML contains six heading levels, <h1>–<h6> although you'll commonly only use 3–4 at most:
+
+<h1>My main title</h1>
+<h2>My top level heading</h2>
+<h3>My subheading</h3>
+<h4>My sub-subheading</h4>
+Now try adding a suitable title to your HTML page just above your <img> element.
+
+Paragraphs
+As explained above, <p> elements are for containing paragraphs of text; you'll use these frequently when marking up regular text content:
+
+<p>This is a single paragraph</p>
+Add your sample text (you should have it from What should your website look like?) into one or a few paragraphs, placed directly below your <img> element.
+
+Lists
+A lot of the web's content is lists, and HTML has special elements for these. Marking up lists always consist of at least two elements. The most common list types are ordered and unordered lists:
+
+Unordered lists are for lists where the order of the items doesn't matter, like a shopping list. These are wrapped in a <ul> element.
+Ordered lists are for lists where the order of the items does matter, like a recipe. These are wrapped in an <ol> element.
+Each item inside the lists is put inside an <li> (list item) element.
+
+For example, if we wanted to turn the part of the following paragraph fragment into a list:
+
+<p>At Mozilla, we’re a global community of technologists, thinkers, and builders working together ... </p>
+We could modify the markup to this:
+
+<p>At Mozilla, we’re a global community of</p>
+    
+<ul> 
+  <li>technologists</li>
+  <li>thinkers</li>
+  <li>builders</li>
+</ul>
+
+<p>working together ... </p>
+Try adding an ordered or unordered list to your example page.
+
+Links
+Links are very important — they are what makes the web a web! To add a link, we need to use a simple element — <a> — the "a" being short for "anchor". To make text within your paragraph into a link, follow these steps:
+
+Choose some text. We chose the text "Mozilla Manifesto".
+Wrap the text in an <a> element, like so:
+<a>Mozilla Manifesto</a>
+Give the <a> element an href attribute, like so:
+<a href="">Mozilla Manifesto</a>
+Fill in the value of this attribute with the web address that you want the link to link to:
+<a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a>
+You might get unexpected results if you omit the https:// or http:// part, called the protocol, at the beginning of the web address. After making a link, click it to make sure it is sending you where you wanted it to.
+
+href might appear like a rather obscure choice for an attribute name at first. If you are having trouble remembering it, remember that it stands for hypertext reference.
+
+Add a link to your page now, if you haven't already done so.
