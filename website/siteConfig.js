@@ -11,13 +11,23 @@
 /* List of projects/orgs using your project for the users page */
 const users = [
   {
-    caption: 'User1',
+    caption: 'Dipak Parmar',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/logo.png'.
-    image: '/img/logo.png',
-    infoLink: 'https://www.facebook.com',
+    image: 'https://scontent.fyvr3-1.fna.fbcdn.net/v/t1.0-9/33030558_623016548038761_7116252684776112128_n.jpg?_nc_cat=0&oh=0f5c40392279bad04ca4e976edead7ec&oe=5BE68CED&efg=eyJhZG1pc3Npb25fY29udHJvbCI6MCwidXBsb2FkZXJfaWQiOiIxMDAwMDk5MTI2NDQ1MDMifQ%3D%3D',
+    infoLink: 'https://www.facebook.com/DipakParmar65',
     pinned: true,
   },
+  // Edit this code and uncomment to add your user badge to site...
+  /*
+  {
+    caption: 'Your Name',
+    // You will need to prepend the image path with your baseUrl
+    image: 'your profile photo img url',
+    infoLink: 'your Social media profile url',
+    pinned: true,
+  },
+  */
 ];
 
 const siteConfig = {
@@ -39,7 +49,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'Getting-Started-with-web', label: 'Start Learning'},
-    {doc: 'Installing-Basic-Software', label: 'Tools'},
+    {doc: 'Tools', label: 'Tools'},
     {page: 'help', label: 'Help/FAQ'},
     {blog: true, label: 'Updates'},
   ],
@@ -59,16 +69,17 @@ const siteConfig = {
   },
 
   /* custom fonts for website */
-  /*fonts: {
+  fonts: {
     myFont: [
+      "Serif",
       "Times New Roman",
-      "Serif"
+      "Calibri"
     ],
     myOtherFont: [
       "-apple-system",
       "system-ui"
     ]
-  },*/
+  },
 
   // This copyright info is used in /core/Footer.js and blog rss/atom feeds.
   copyright:
@@ -78,7 +89,7 @@ const siteConfig = {
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
-    theme: 'default',
+    theme: 'Arta',
   },
 
   // Add custom scripts here that would be placed in <script> tags
