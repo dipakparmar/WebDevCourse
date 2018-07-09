@@ -142,7 +142,7 @@ const FeatureCallout = props => (
     <h2>Workshop Highlights</h2>
     <MarkdownBlock>
        
-      > * Making E-Commerce Website
+      >   * Making E-Commerce Website
        
       * Making Portfolio Site
       

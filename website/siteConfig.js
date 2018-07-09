@@ -90,11 +90,16 @@ const siteConfig = {
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks
-    theme: 'Arta',
+    theme: 'atom-one-dark',
   },
 
   // Add custom scripts here that would be placed in <script> tags
-  scripts: ['https://github.com/Dipakparmar/webdevcourse/'],
+  scripts: [
+    'https://buttons.github.io/buttons.js',
+    'https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
+    '/js/code-block-buttons.js',
+  ],
+  stylesheets: ['/css/code-blocks-buttons.css'],
 
   /* On page navigation for the current documentation page */
   onPageNav: 'separate',
@@ -106,6 +111,10 @@ const siteConfig = {
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
   repoUrl: 'https://github.com/DipakParmar/WebDevCourse',
+  scrollToTop: true,
+  scrollToTopOptions: {
+    zIndex: 100,
+  },
 };
 
 module.exports = siteConfig;
