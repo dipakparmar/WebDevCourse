@@ -33,7 +33,7 @@ const users = [
 const siteConfig = {
   title: 'WebSite Development Course' /* title for your website */,
   titleMed: ' Website Dev. Course',
-  tagline: 'Build a Website using Wordpress',
+  tagline: 'Build a Website using WordPress',
   url: 'https://dipakparmar.github.io/',
   baseUrl: '/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -49,7 +49,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'Getting-Started-with-web', label: 'Start Learning'},
+    {page: 'NotAuthorized', label: 'Start Learning'},
     {doc: 'Tools', label: 'Tools'},
     {page: 'help', label: 'Help/FAQ'},
     {blog: true, label: 'Updates'},
@@ -86,7 +86,7 @@ const siteConfig = {
   copyright:
     'Copyright © ' +
     new Date().getFullYear() +
-    ' Thopmson Rivers University | Faculty of Computer Science',
+    ' Thompson Rivers University | Faculty of Computer Science',
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks

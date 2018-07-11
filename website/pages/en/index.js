@@ -80,8 +80,7 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
-            <Button href="https://docs.google.com/presentation/d/18TI41-mpp7TyfM1og9h_ZJlmO-cxAos9XYRhnlG4GKU/edit?usp=sharing">Open Presentation</Button>
-            <Button href={docUrl('doc1.html', language)}>Example Link</Button>
+            <Button href="https://www.tru.ca/forms/science/short-term/" > Register Here ! </Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -94,43 +93,43 @@ const Block = props => (
     padding={['bottom', 'top']}
     id={props.id}
     background={props.background}>
-    <GridBlock align="center" contents={props.children} layout={props.layout} />
+    <GridBlock align="left" contents={props.children} layout={props.layout} />
   </Container>
 );
 
 const Features = props => (
-  <Block layout="fourColumn">
+  <Block layout="fourColumn" background="light">
     {[
       {
-        content: 'Easy to manage your website and responsive design.',
+        content: 'Easy to manage your website from feature rich smart dashboard and responsive design of themes helps your site get perfect and smooth performance view on every device.',
         image: imgUrl('simplycity.png'),
         imageAlign: 'top',
-        title: 'SIMPLYCITY AND RESPONSIVE',
+        title: 'Simplicity and Responsive',
       },
       {
-        content: 'The content of my second feature',
+        content: 'Inbuilt 1000s of free themes in store. PreDesigned Website Layout that helps to make your website fresh and new in a click, no more wait to change design of website. and easy to customize with theme option.',
         image: imgUrl('theme.jpg'),
         imageAlign: 'top',
-        title: 'THEMES',
+        title: 'Themes',
       },
       {
-        content: 'The content of my second feature',
+        content: 'Plugins are the extra feature adding scripts that helps to add more functionality to your site. like automation, social login, email, payments , shop management, etc,.',
         image: imgUrl('plugins.png'),
         imageAlign: 'top',
-        title: 'PLUGINS',
+        title: 'Plugins',
       },
       {
-        content: 'The content of my second feature',
+        content: 'Another Great Feature of WordPress CMS is the multipurpose usage, you can use it to make your portfolio, blog, online shop site, almost you can me all type of.. also you can transfer your contents from another blog cms like blogger, etc.',
         image: imgUrl('multipurpose.png'),
         imageAlign: 'top',
-        title: ' MULTIPURPOSE',
+        title: ' Multi-Purpose and Easy Migration',
       },
-      {
+ /*{
         content: 'The content of my second feature',
         image: imgUrl('easyswitch.jpg'),
         imageAlign: 'top',
         title: 'EASYSWITCH',
-      },
+      }, */
     ]}
   </Block>
 );
@@ -142,11 +141,11 @@ const FeatureCallout = props => (
     <h2>Workshop Highlights</h2>
     <MarkdownBlock>
        
-      >   * Making E-Commerce Website
+      > Build an E-Commerce Website
        
-      * Making Portfolio Site
+      * Portfolio Site
       
-      * Making Blogging Site
+      * Blogging Site
 
     </MarkdownBlock>
   </div>
@@ -156,7 +155,7 @@ const LearnHow = props => (
   <Block background="light">
     {[
       {
-        content: 'Talk about learning how to use this',
+        content: 'In this One Day WorkShop you can get better how the E-commerce system works and how you can setup your online store without no coding experience. Adding products, managing order and creating invoices - packaging slips and many more things...! ',
         image: imgUrl('Shop.jpg'),
         imageAlign: 'right',
         title: 'Learn How to make Online Shop Website',
@@ -169,10 +168,10 @@ const TryOut = props => (
   <Block id="try">
     {[
       {
-        content: 'Talk about trying this out',
+        content: 'Are you a photographer or hobbyist or want to share something with world though your website then WordPress is perfect solution for that, using it you can build your own portfolio or blogging site.',
         image: imgUrl('portfolioBanner.jpg'),
         imageAlign: 'left',
-        title: 'Try it Out',
+        title: 'Create a Portfolio Site',
       },
     ]}
   </Block>
@@ -182,10 +181,10 @@ const Description = props => (
   <Block background="dark">
     {[
       {
-        content: 'This is another description of how this project is useful',
+        content: 'WooCommerce is a free eCommerce plugin that allows you to sell anything, beautifully. Built to integrate seamlessly with WordPress, WooCommerce is the world’s favorite eCommerce solution that gives both store owners and developers complete control. </br> With endless flexibility and access to hundreds of free and premium WordPress extensions, WooCommerce now powers 30% of all online stores — more than any other platform.',
         image: imgUrl('WPWooBanner.png'),
         imageAlign: 'right',
-        title: 'Description',
+        title: 'WordPress + E-Commerce = WooCommerce',
       },
     ]}
   </Block>
