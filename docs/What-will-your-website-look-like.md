@@ -12,9 +12,10 @@ Before you do anything, you need some ideas. What should your website actually d
 
 To begin with, you'll need to answer these questions:
 
-1. What is your website about? Do you like dogs, New York, or Pacman?
-2. What information are you presenting on the subject? Write a title and a few paragraphs, and think of an image you'd like to show on your page.
-3. What does your website look like, in simple high-level terms? What's the background color? What kind of font is appropriate: formal, cartoony, bold and loud, subtle?
+1.  **What is your website about?** Do you like dogs, New York, or Pacman?
+2.  **What information are you presenting on the subject?** Write a title and a few paragraphs, and think of an image you'd like to show on your page.
+3.  **What does your website look like,** in simple high-level terms? What's the background color? What kind of font is appropriate: formal, cartoony, bold and loud, subtle?
+
 
 ## Sketching out your design
 
@@ -32,7 +33,7 @@ You should still have your paragraphs and title from earlier. Keep these close b
 
 ### Theme color 
 
-To choose a color, go to the [Color Picker](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool) and find a color you like. When you click on a color, you'll see a strange six-character code like #660066. That's called a *hex(adecimal)* code, and represents your color. Copy the code down somewhere safe for now.
+To choose a color, go to the [Color Picker](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool) and find a color you like. When you click on a color, you'll see a strange six-character code like ```#660066```. That's called a *hex(adecimal)* code, and represents your color. Copy the code down somewhere safe for now.
 
 ![color-picker](../img/assets/color-picker.png)
 
