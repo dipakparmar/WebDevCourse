@@ -90,51 +90,32 @@ There are many different types of selectors. Above, we only looked at **element 
 | ------------- | ------------- | ------------- |
 | Element selector (sometimes called a tag or type selector) | All HTML element(s) of the specified type. | `p`  Selects `<p>`|
 | ID selector | The element on the page with the specified ID (on a given HTML page, you're only allowed one element per ID).| `#my-id`  Selects `<p id="my-id">` or `<a id="my-id">` |
+| Class selector | The element(s) on the page with the specified class (multiple class instances can appear on a page). | `.my-class` Selects `<p class="my-class">` and `<a class="my-class">`|
+| Attribute selector | The element(s) on the page with the specified attribute. | `img[src]`Selects `<img src="myimage.png">` but not `<img>` |
+| Pseudo-class selector | The specified element(s), but only when in the specified state, e.g. being hovered over. | `a:hover`   Selects `<a>`, but only when the mouse pointer is hovering over the link.|
 
-Class selector
-
-The element(s) on the page with the specified class (multiple class instances can appear on a page).
-
-`.my-class`  
-Selects `<p class="my-class">` and `<a class="my-class">`
-
-Attribute selector
-
-The element(s) on the page with the specified attribute.
-
-`img[src]`  
-Selects `<img src="myimage.png">` but not `<img>`
-
-Pseudo-class selector
-
-The specified element(s), but only when in the specified state, e.g. being hovered over.
-
-`a:hover`  
-Selects `<a>`, but only when the mouse pointer is hovering over the link.
-
-There are many more selectors to explore, and you can find a more detailed list in our [Selectors guide](/en-US/docs/Web/Guide/CSS/Getting_started/Selectors).
 
 Fonts and text
 --------------
 
 Now that we've explored some CSS basics, let's start adding some more rules and information to our `style.css` file to make our example look nice. Let's start by getting our fonts and text to look a little better.
 
-1.  First of all, go back and find the [output from Google Fonts](/en-US/Learn/Getting_started_with_the_web/What_should_your_web_site_be_like#Font) that you stored somewhere safe. Add the {{htmlelement("link")}} element somewhere inside your `index.html`'s head (again, anywhere between the `<head>` and `</head>` tags). It'll look something like this:
-    
+1.  First of all, go back and find the [output from Google Fonts](../docs/What-will-your-website-look-like.html#font) that you stored somewhere safe. Add the <link> element somewhere inside your `index.html`'s head (again, anywhere between the `<head>` and `</head>` tags). It'll look something like this:
+```    
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    
+```    
 2.  Next, delete the existing rule you have in your `style.css` file. It was a good test, but red text doesn't actually look very good.
 3.  Add the following lines in its place, replacing the placeholder line with the actual `font-family` line you got from Google Fonts. (`font-family` just means the font(s) you want to use for your text.) This rule first sets a global base font and font size for the whole page (since `<html>` is the parent element of the whole page, and all elements inside it inherit the same `font-size` and `font-family`):
-    
+```   
     html {
       font-size: 10px; /* px means 'pixels': the base font size is now 10 pixels high  */
       font-family: 'Open Sans', sans-serif; /* this should be the rest of the output you got from Google fonts */
     }
+```    
+   > **Note**: Anything in a CSS document between `/*` and `*/` is a **CSS comment**, which the browser ignores when it renders the code. This is a place for you to write helpful notes on what you are doing.
     
-    **Note**: Anything in a CSS document between `/*` and `*/` is a **CSS comment**, which the browser ignores when it renders the code. This is a place for you to write helpful notes on what you are doing.
-    
-4.  Now we'll set font sizes for text-containing elements inside the HTML body ({{htmlelement("h1")}}, {{htmlelement("li")}}, and {{htmlelement("p")}}). We'll also center the text of our heading and set some line height and letter spacing on the body content to make it a bit more readable:
-    
+4.  Now we'll set font sizes for text-containing elements inside the HTML body ```<h1>```, ```<li>``` , and ```<p>```. We'll also center the text of our heading and set some line height and letter spacing on the body content to make it a bit more readable:
+ ```   
     h1 {
       font-size: 60px;
       text-align: center;
@@ -145,7 +126,7 @@ Now that we've explored some CSS basics, let's start adding some more rules and 
       line-height: 2;
       letter-spacing: 1px;
     }
-    
+ ```   
 
 You can adjust these `px` values to whatever you like to get your design looking how you want, but in general your design should look like this:
 
@@ -178,14 +159,16 @@ So, let's get started and add some more CSS to our page! Keep adding these new r
 
 ### Changing the page color
 
+```
 html {
   background-color: #00539F;
 }
-
+```
 This rule sets a background color for the whole page. Change the color code above to whatever color [you chose when planning your site](/en-US/Learn/Getting_started_with_the_web/What_should_your_web_site_be_like#Theme_color).
 
 ### Sorting the body out
 
+```
 body {
   width: 600px;
   margin: 0 auto;
@@ -193,8 +176,9 @@ body {
   padding: 0 20px 20px 20px;
   border: 5px solid black;
 }
+```
 
-Now for the {{htmlelement("body")}} element. There are quite a few declarations here, so let's go through them all one by one:
+Now for the ```<body>``` element. There are quite a few declarations here, so let's go through them all one by one:
 
 *   `width: 600px;` — this forces the body to always be 600 pixels wide.
 *   `margin: 0 auto;` — When you set two values on a property like `margin` or `padding`, the first value affects the element's top **and** bottom side (make it `0` in this case), and the second value the left **and** right side (here, `auto` is a special value that divides the available horizontal space evenly between left and right). You can also use one, three, or four values, as documented [here](https://developer.mozilla.org/en-US/docs/Web/CSS/margin#Values).
@@ -204,12 +188,14 @@ Now for the {{htmlelement("body")}} element. There are quite a few declarations
 
 ### Positioning and styling our main page title
 
+```
 h1 {
   margin: 0;
   padding: 20px 0;    
   color: #00539F;
   text-shadow: 3px 3px 1px black;
 }
+```
 
 You may have noticed there's a horrible gap at the top of the body. That happens because browsers apply some **default styling** to the {{htmlelement("h1")}} element (among others), even when you haven't applied any CSS at all! That might sound like a bad idea, but we want even an unstyled webpage to have basic readability. To get rid of the gap we overrode the default styling by setting `margin: 0;`.
 
@@ -226,12 +212,14 @@ Again, try experimenting with different values to see what you can come up with!
 
 ### Centering the image
 
+```
 img {
   display: block;
   margin: 0 auto;
 }
+```
 
-Finally, we'll center the image to make it look better. We could use the `margin: 0 auto` trick again as we did earlier for the body, but we also need to do something else. The {{htmlelement("body")}} element is **block level**, meaning it takes up space on the page and can have margin and other spacing values applied to it. Images, on the other hand, are **inline** elements, meaning they can't. So to apply margins to the image, we have to give the image block-level behavior using `display: block;`.
+Finally, we'll center the image to make it look better. We could use the `margin: 0 auto` trick again as we did earlier for the body, but we also need to do something else. The ```<body>``` element is **block level**, meaning it takes up space on the page and can have margin and other spacing values applied to it. Images, on the other hand, are **inline** elements, meaning they can't. So to apply margins to the image, we have to give the image block-level behavior using `display: block;`.
 
 **Note**: Don't worry if you don't yet understand `display: block;` and the block-level/inline distinction. You will as you study CSS in more depth. You can find out more about the different available display values at our [display reference page](/en-US/docs/Web/CSS/display).
 
