@@ -8,7 +8,7 @@ sidebar_label: Managing Orders
 
 Orders are created when a customer completes the checkout process, and they are visible by Admin and Shop Manager users only. Each order is given a unique Order ID.
 
-> Order IDs are like Post IDs and are non-sequential. For sequential order numbers, you can use ![Sequential Order Numbers Pro.](http://woocommerce.com/products/sequential-order-numbers-pro/?_ga=2.86880024.1644749598.1531628065-1285620218.1531628065)
+> Order IDs are like Post IDs and are non-sequential. For sequential order numbers, you can use ![Sequential Order Numbers Pro](http://woocommerce.com/products/sequential-order-numbers-pro/?_ga=2.145639092.1644749598.1531628065-1285620218.1531628065).
 
 An order also has a **Status**. Order statuses let you know how far along the order is, starting with Pending and ending with Complete. The following order statuses are used:
 
