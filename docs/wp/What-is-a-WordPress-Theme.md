@@ -4,7 +4,7 @@ title: What is a WordPress Theme?
 sidebar_label: What is a WordPress Theme?
 ---
 
-##What is a WordPress Theme? 
+## What is a WordPress Theme? 
 
 A WordPress theme provides all of the front end styling of your WordPress site. 
  

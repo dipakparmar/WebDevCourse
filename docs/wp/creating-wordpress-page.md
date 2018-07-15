@@ -5,8 +5,6 @@ sidebar_label: Creating WordPress Page
 ---
 
 Creating a WordPress page is very similar to creating a post. Just remember that pages are intended for static content.
-
-Watch the video:
  
 ## Creating a WordPress Page
 1. To get started adding a new page to your WordPress site, find the Pages menu in the WordPress Dashboard Navigation menu. Click Add new.
@@ -15,20 +13,13 @@ The WordPress page editor looks nearly identical to the post editor, except for 
 3. Next, add some content.
 4. The Publish section of the page editor is exactly the same as for writing posts. When you’re ready to publish, you can either publish immediately, save this as a draft, or schedule the page to be published later.
 5. The Page Attributes section applies a parent page and template to your new page. For the Parent section, you can arrange your pages into hierarchies. For example, you could create this new page with additional pages under it. There are no limits to how many levels you can nest pages.
- 60
-
  6. Some WordPress themes have custom page templates, so the next Template section allows you to apply a template to your new page.
 7. The Order box allows you to order your page numerically. Pages are usually ordered alphabetically, but you can choose your own order by entering a number in this field.
 8. Preview the page one last time, then click Publish. You’ve added a new page to your WordPress site.
-61
 
 ## Applying a WordPress Page Template
 
 Some WordPress themes include page templates that change the way your pages are formatted on the front end of the site. By using page templates, your theme changes how your pages look and where certain page elements are located.
-
-Watch the video:
-  
-## Applying a WordPress Page Template
 
 1. To add a WordPress page template to a
 page, edit or add a new page from the Pages menu located in the WordPress Dashboard.
