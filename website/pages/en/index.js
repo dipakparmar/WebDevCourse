@@ -81,6 +81,7 @@ class HomeSplash extends React.Component {
           <ProjectTitle />
           <PromoSection>
             <Button href="https://www.tru.ca/forms/science/short-term/" > Register Here ! </Button>
+            <Button href="https://docs.google.com/presentation/d/18TI41-mpp7TyfM1og9h_ZJlmO-cxAos9XYRhnlG4GKU/edit?usp=sharing" > Open Presentation </Button>
           </PromoSection>
         </div>
       </SplashContainer>
