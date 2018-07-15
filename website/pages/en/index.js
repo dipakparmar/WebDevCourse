@@ -80,7 +80,8 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle />
           <PromoSection>
-            <Button href="https://www.tru.ca/forms/science/short-term/" > Register Here ! </Button>
+            <Button href="http://webdevcourse.netlify.com/blog/2018/07/15/Certificate-collection.html" > Collect Certificate ! </Button>
+            <Button href="http://bit.ly/TRUWebDevCourseFeedback"> Feedback </Button>
             <Button href="https://docs.google.com/presentation/d/18TI41-mpp7TyfM1og9h_ZJlmO-cxAos9XYRhnlG4GKU/edit?usp=sharing" > Open Presentation </Button>
           </PromoSection>
         </div>

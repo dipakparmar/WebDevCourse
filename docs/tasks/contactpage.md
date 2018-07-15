@@ -3,6 +3,63 @@ id: ContactPage
 title: ContactPage
 sidebar_label: ContactPage
 ---
+
+### Check how it looks ? without styles and script
+```
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Contact us</title>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                <img class="logo" align="right" src="./img/logo.png" alt="Logo Here" />
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-10">
+                <h1 class="title">Your Site Name here</h1>
+            </div>
+        </div>
+				<ul>
+  <li><a href="./index.html">Home</a></li>
+  <li><a href="./profile.html">Profile</a></li>
+  <li><a class="active" href="./contact.html">Contact</a></li>
+</ul>
+        <div class="row">
+		<form>
+            <table>
+                <tr>
+                    <td rowspan="5"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10114.242411259083!2d-120.37482931610874!3d50.672418321030534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537e2cf506b9fff1%3A0x245985f4d672fc1c!2sThompson+Rivers+University%2C+Kamloops%2C+BC!5e0!3m2!1sen!2sca!4v1529703844853" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></td>
+                    <td class="field"><label>Name :</label></td><td><input type="text" name="nametext" placeholder="Bob Builder" required /></td>
+                </tr>
+                <tr>
+                        <td class="field"><label>Email :</label></td><td><input type="email" name="emailtext" placeholder="user@example.com" required /></td>
+                </tr>
+                <tr>
+                        <td class="field"><label>Contact No : </label></td><td><input type="text" name="conumbertext" placeholder="123 456-7898" required /></td>
+                </tr>
+                <tr>
+                        <td class="field"><label>Message/Query :</label></td><td><textarea name="messagetext" style="height:200px" placeholder="Eneter your message here" required></textarea></td>
+                </tr>
+                <tr>
+                        <td class="field"></td><td><input type="submit" value="Submit"></td>
+                </tr>
+                
+            </table>
+			</form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+```
+
 ```
 <!DOCTYPE html>
 <html>
