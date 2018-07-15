@@ -23,8 +23,6 @@ The WordPress page editor looks nearly identical to the post editor, except for 
 ## Applying a WordPress Page Template
 
 Some WordPress themes include page templates that change the way your pages are formatted on the front end of the site. By using page templates, your theme changes how your pages look and where certain page elements are located.
-  
-## Applying a WordPress Page Template
 
 1. To add a WordPress page template to a
 page, edit or add a new page from the Pages menu located in the WordPress Dashboard.
