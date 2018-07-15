@@ -5,8 +5,6 @@ sidebar_label: Creating WordPress Page
 ---
 
 Creating a WordPress page is very similar to creating a post. Just remember that pages are intended for static content.
-
-Watch the video:
  
 ## Creating a WordPress Page
 1. To get started adding a new page to your WordPress site, find the Pages menu in the WordPress Dashboard Navigation menu. Click Add new.
@@ -25,8 +23,6 @@ The WordPress page editor looks nearly identical to the post editor, except for 
 ## Applying a WordPress Page Template
 
 Some WordPress themes include page templates that change the way your pages are formatted on the front end of the site. By using page templates, your theme changes how your pages look and where certain page elements are located.
-
-Watch the video:
   
 ## Applying a WordPress Page Template
 
