@@ -1,7 +1,7 @@
 {
   "docs": {
     "Getting Started": ["Getting-Started-with-web", "Installing-Basic-Software", "What-will-your-website-look-like", "Dealing-with-files", "HTML-Basics", "CSS-basics", "JavaScript-basics", "Publishing-your-website", "How-the-Web-works"],
-    "WordPress": ["WordPress"]
+    "WordPress": ["wp/about-WordPress","wp/WordPress","wp/creating-wordpress-post","wp/creating-wordpress-page","wp/What-is-a-WordPress-Theme","wp/What-are-WordPress-Plugins","wp/Using-WordPress-Widgets"]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]
