@@ -11,8 +11,6 @@ WordPress dashboard. You can either
 hover over the Posts link or click to
 expand it to reveal the submenu.
 
-Watch the video:
-
 # Creating a WordPress Post
  
  The **Add New Posts page** can also be found from the **+ New link** in the WordPress Admin Bar.
@@ -50,8 +48,6 @@ Again from the post editor, you can also drag or drop the order of these boxes t
 ## Adding Links in WordPress
 The WordPress post and page editor makes it easy to add hyperlinks to other web pages from your content.
 
-Watch the video:
-
 1. From the WordPress post or page editor, select the text that you want to be hyperlinked.
 2. Once you have that text selected, click the hyperlink button in the toolbar.
 3. This will bring up a box where you can enter the URL of your hyperlink and a title to be displayed on hover. You can also click this checkbox to open the link in a new tab.
@@ -64,7 +60,6 @@ Watch the video:
 using a visual element like an image
  or photo is a great way to spruce up
  your post or page content.
- Watch the video:
 
  ### Adding Images in WordPress
    
@@ -87,8 +82,6 @@ The featured image of the post is sometimes used by your WordPress theme. Go ahe
 
 The WordPress Media Library contains all the files you’ve uploaded to your WordPress site, with the most recent uploads listed first.
  
- Watch the video:
-
 To visit your WordPress Media Library, expand
 the Media menu from the WordPress dashboard. The Media Library page will show all of the media items you currently have in your media library.
 To add a new media item to your library, click the Add New link. From here, upload a new image. Once your image has been uploaded, you’ll see it has been added to the library.
@@ -103,8 +96,6 @@ If you have more than one file to upload at once, you can easily switch to the m
 
 ## Formatting WordPress Posts
 In this section, we’ll be covering some of the basics of formatting your WordPress posts with the built-in WordPress post editor.
-
-Watch the video:
 
 
  The majority of your formatting options can be found in the Post Editor Toolbar. If you’ve ever used a word processing software such as Microsoft Word, most of these icons should look familiar.
@@ -129,7 +120,6 @@ revealed. Here you can add heading styles to your text, underline text or set a 
 # Scheduling WordPress Posts
 
 Scheduling your WordPress posts is an easy way to control when your content is published. With the built-in WordPress post scheduler, you can add a time to publish.
-Watch the video:
 
 This WordPress posts scheduling feature is found in
 the Publish box on the upper right side of the post editor page.
@@ -144,7 +134,6 @@ If you change your mind and want to publish this post immediately, click the Edi
 
 ## WordPress Categories & Tags
 WordPress categories and tags are a way to add an organizational structure to your WordPress posts.
-Watch the video:
 
 ## WordPress Categories
 WordPress categories are basic ways for you to organize your posts into different categories, such as topics.
