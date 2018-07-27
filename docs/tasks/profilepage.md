@@ -3,6 +3,62 @@ id: ProfilePage
 title: Profile Page
 sidebar_label: Profile Page
 ---
+### WITHOUT STYLE HOW IT LOOKS.
+
+```
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Profile Page </title>
+    <!-- Start CSS here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    </head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                <img class="logo" align="right" src="./img/logo.png" alt="Logo Here" />
+            </div>
+            <div class="col-sm-10 col-md-10 col-lg-10">
+                <h1 class="title">Your Site Name here</h1>
+            </div>
+        </div>
+				<ul>
+  <li><a href="./index.html">Home</a></li>
+  <li><a class="active" href="./profile.html">Profile</a></li>
+  <li><a href="./contact.html">Contact</a></li>
+</ul>
+        <div class="row">
+            <table>
+                <tr>
+                    <td rowspan="5"><img src="./img/user.png" alt="User Photo" /></td>
+                    <td class="field">Name :</td><td> Mr. Robison</td>
+                </tr>
+                <tr>
+                        <td class="field">Email :</td><td><a href="mailto:mail@example.com">mail@example.com</a></td>
+                </tr>
+                <tr>
+                        <td class="field">Contact No : </td><td>+1 246 678 889</td>
+                </tr>
+                <tr>
+                        <td class="field">Website :</td><td><a target="_blank" href="http://www.google.com">www.google.com</a></td>
+                </tr>
+                <tr>
+                        <td class="field">Country :</td><td>Canada</td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+
+
+</body>
+</html>
+```
+### WITH STYLE HOW IT LOOKS.
 
 ```
 <!DOCTYPE html>
